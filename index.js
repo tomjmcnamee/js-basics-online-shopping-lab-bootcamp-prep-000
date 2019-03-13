@@ -19,7 +19,7 @@ function viewCart() {
   var list = ""
   if ( i === 0 ) { return  "Your shopping cart is empty."}
   else if ( i === 1 ) { 
-     return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}, and ${cart[1].itemName} at \$${cart[1].itemPrice}.`  } // closes first else if
+     return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}.`  } // closes first else if
   else {
     for ( var num = 0; num < i - 1; num++) {
     list = `${list} ${cart[num].itemName} at \$${cart[num].itemPrice},`
