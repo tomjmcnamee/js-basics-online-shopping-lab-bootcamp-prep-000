@@ -41,7 +41,7 @@ function total() {
 function removeFromCart(item) {
   var ind = cart.findIndex(c => c.itemName === item)
   if (ind === -1 ) { return `That item is not in your cart.` }
-  else { cart.splice(ind)
+  else { cart.splice(ind, 1)
   return cart }
 }
 
