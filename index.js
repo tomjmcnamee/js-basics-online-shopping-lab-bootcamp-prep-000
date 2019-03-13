@@ -39,7 +39,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var ind = cart.findIndex(c => c.itemName === item)
+  cart.Splice(ind)
+  return cart
 }
 
 function placeOrder(cardNumber) {
