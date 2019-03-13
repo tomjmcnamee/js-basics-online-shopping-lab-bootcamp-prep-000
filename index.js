@@ -19,7 +19,7 @@ function viewCart() {
   if ( i === 0 ) { return  "Your shopping cart is empty."}
   else {
     var list = ""
-    for (num = 0; num < i; num++) {
+    for ( var num = 0; num < i; num++) {
     list = `${list} ${cart[num].itemName} at \$${cart[num].itemPrice},`
       }  
   return `In your cart, you have ${list} and ${cart[i - 1].itemName} at \$${cart[i - 1].itemPrice}.` 
