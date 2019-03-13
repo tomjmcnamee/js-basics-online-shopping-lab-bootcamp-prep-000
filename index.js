@@ -24,7 +24,7 @@ function viewCart() {
     for ( var num = 0; num < i - 1; num++) {
     list = `${list} ${cart[num].itemName} at \$${cart[num].itemPrice},`
       }  
-  return `In your cart, you have ${list} and ${cart[i - 1].itemName} at \$${cart[i - 1].itemPrice}.` 
+  return `In your cart, you have${list} and ${cart[i - 1].itemName} at \$${cart[i - 1].itemPrice}.` 
   } // closes final else
 
   }
