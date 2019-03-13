@@ -16,14 +16,16 @@ function addToCart(item) {
 
 function viewCart() {
   var i = cart.length
+  var list = ""
   if ( i === 0 ) { return  "Your shopping cart is empty."}
+  else if ( i === 1 ) { 
+     return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}, and ${cart[1].itemName} at \$${cart[1].itemPrice}.`  } // closes first else if
   else {
-    var list = ""
     for ( var num = 0; num < i - 1; num++) {
     list = `${list} ${cart[num].itemName} at \$${cart[num].itemPrice},`
       }  
   return `In your cart, you have ${list} and ${cart[i - 1].itemName} at \$${cart[i - 1].itemPrice}.` 
-  }
+  } // closes final else
 
   }
 
