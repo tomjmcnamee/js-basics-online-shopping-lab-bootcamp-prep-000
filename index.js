@@ -40,8 +40,9 @@ function total() {
 
 function removeFromCart(item) {
   var ind = cart.findIndex(c => c.itemName === item)
-  cart.Splice(ind)
-  return cart
+  if (ind === -1 ) { return `That item is not in your cart.` }
+  else { cart.Splice(ind)
+  return cart }
 }
 
 function placeOrder(cardNumber) {
